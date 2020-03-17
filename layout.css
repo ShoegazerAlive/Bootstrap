@@ -1,0 +1,93 @@
+.abuelo{
+    background:black;
+    height: 900px;
+    width: 100%;
+
+}
+.header{
+    background: #142850;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100px;
+    align-items: center;
+    
+
+}
+    .título{
+        background: blue;
+        height: 100px;
+        width: 100%;
+        margin-bottom: 10px;;
+      
+        
+    }
+    .nav{
+        background: chartreuse;
+        display: flex;
+        height: 100px;
+        width: 100%;
+        flex-flow: row nowrap;
+        align-items: center;
+        
+    
+    }
+.main{
+    background: white;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 650px;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: center;
+
+}
+    .aside{
+        background: darkblue;;
+        height: 600px;
+        width: 23%;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-content: center;
+    
+    
+        }
+    .cuerpo{
+        background: rgb(68, 1, 68);
+        height: 600px;
+        width: 73%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-content: center;
+    
+    
+        }
+
+.footer{
+    background: blue;
+    height: 100px;
+    width: 100%;
+    font-size: 32px;
+    margin: 0.2em;
+}
+
+@media only screen and (max-width:600px){
+    .cuerpo{flex-flow: column; font-family: Verdana; font-size: 12px; height: 450px;background: cornflowerblue;}
+    .aside{flex-flow: column; font-family: Verdana; font-size: 12px; height: 450px; background: darkgreen;}
+    .footer{flex-flow: column; font-family: Impact; font-size: 22px; height: 100px; width: 100%; background: darkslategray;}
+    .main{height: 480px; justify-content: center;}
+    .header{height: 100px;}
+    .abuelo{height:600px}
+    .título{height: 75px;background: darkviolet;}
+    .nav{height: 75px; background: forestgreen;}
+}
+@media only screen and (min-width:768px){
+    .cuerpo{flex-flow: column; font-family: Helvetica; font-size: 22px; height: 650px;background: coral;;}
+    .aside{flex-flow: column; font-family: Helvetica; font-size: 22px; height: 650px; background: crimson;;}
+    .footer{flex-flow: column; font-family: Tahoma; font-size: 32px; height: 200px; width: 100%; background: darkcyan;}
+    .main{height: 680px; justify-content: center;}
+    .header{height: 200px;}
+    .abuelo{height:600px}
+    .título{height: 120px;background: darkmagenta;}
+    .nav{height: 120px; background: darkseagreen;}
+}
